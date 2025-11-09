@@ -1,0 +1,602 @@
+/* ===================================
+   BANNER
+=================================== */
+#banner {
+  background: #F5F5F5;
+}
+
+#bannerCarousel {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#banner img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #F5F5F5;
+}
+
+
+/* ===================================
+   CONTATO
+=================================== */
+#contato {
+  position: relative;
+  padding-top: 32px;
+  background: #F5F5F5;
+}
+
+#contato h5 {
+  color: #0B2B64;
+  font-size: 2.5rem;
+}
+
+#contato i {
+  color: #0B2B64;
+  font-size: 1.1rem;
+}
+
+#contato a {
+  color: #222;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Linhas e espaçamentos */
+#contato .linhamaior {
+  width: 2px;
+  height: 80px;
+  background-color: #0B2B64;
+}
+
+#contato .linhas {
+  width: 2px;
+  height: 24px;
+  background-color: #0B2B64;
+}
+
+#contato .mx-6 {
+  margin: 0 40px;
+}
+
+#contato svg {
+  margin-right: 4px;
+}
+
+/* Linhas decorativas abaixo */
+.linha-azul {
+  width: 100%;
+  height: 4px;
+  margin-top: 30px;
+  background-color: #0B2B64;
+}
+
+.espaco-branco {
+  width: 100%;
+  height: 6px;
+  background-color: #fff;
+}
+
+.linha-verde {
+  width: 100%;
+  height: 4px;
+  background-color: #00B38A;
+}
+
+/* Layout padrão (desktop) */
+#contato .contato-linha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+
+/* ===================================
+   PRODUTOS - DESTAQUES
+=================================== */
+#produtos-destaques {
+  background-color: #F5F5F5;
+}
+
+.container-card {
+  padding-block: 90px;
+}
+
+#produtos-destaques h1 {
+  padding-top: 90px;
+}
+
+#produtos-destaques .texto-destaque {
+  padding-bottom: 90px;
+}
+
+/* Título com linhas */
+.linha-com-texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px 0 30px;
+  color: #0B2B64;
+  text-align: center;
+}
+
+.linha-com-texto::before,
+.linha-com-texto::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #0B2B64;
+}
+
+.linha-com-texto h3 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #0B2B64;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* "Ver mais" */
+.ver-mais {
+  text-decoration: none !important;
+  display: inline-block;
+  position: relative;
+  color: #0B2B64;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ver-mais::after {
+  content: "";
+  display: block;
+  width: 68px;
+  height: 2px;
+  margin: 6px auto 0;
+  background: #0B2B64;
+  border-radius: 2px;
+}
+
+
+/* ===================================
+   AJUSTES GERAIS
+=================================== */
+.row {
+  margin: 0 auto;
+}
+
+[class*="col-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* ===================================
+   NOVIDADES
+=================================== */
+#novidades {
+  padding-block: 90px;
+}
+
+#novidades .card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+#novidades h2 {
+  font-size: 2.5rem;
+}
+
+  #novidades p {
+    color: #F5F5F5;
+  }
+
+#novidades .card:hover {
+  transform: translateY(-5px);
+}
+
+#novidades .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#novidades .card-text {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #5D5D5D;
+}
+
+#novidades .card-title {
+  color: #202020;
+}
+
+
+#novidades .card .btn {
+  margin-inline: 4px;
+}
+
+
+/* ===================================
+   SETAS
+=================================== */
+.carousel-control-prev,
+.carousel-control-next {
+  margin-inline: -90px;
+  width: 8%;
+  z-index: 10;
+  opacity: 1;
+}
+
+.carousel-control-prev svg,
+.carousel-control-next svg {
+  width: 40px;
+  height: 40px;
+  fill: #CBE8E6;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.carousel-control-prev:hover svg,
+.carousel-control-next:hover svg {
+  fill: #9CD4D2;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none !important;
+}
+
+.carousel-item {
+  transition: transform 1s ease-in-out; /* deixa a transição mais fluida */
+}
+
+
+
+/* === MULTI-ITEM CAROUSEL === */
+#novidadesCarousel .carousel-inner {
+  display: flex;
+}
+
+.carousel-medio {
+  display: none !important;
+}
+
+.carousel-pequeno {
+  display: none !important;
+}
+
+/* restaura comportamento padrão sem mexer na aparência */
+.carousel-inner { position: relative; overflow: hidden; }
+.carousel-item { display: none; position: relative; transition: transform 0.6s ease-in-out; backface-visibility: hidden; }
+.carousel-item.active { display: block; }
+.carousel-item > * { margin-left: auto; margin-right: auto; } /* centraliza conteúdo do slide */
+
+
+
+/* ===================================
+   VANTAGENS
+=================================== */
+
+#vantagens {
+  background-color: #F5F5F5;
+  padding-block: 90px;
+}
+
+#vantagens .titulo {
+  color: #0B2B64;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#vantagens .subtitulo {
+  color: #444;
+  font-size: 1rem;
+}
+
+.vantagem-card {
+  background-color: #fff;
+  border: 1px solid #0B2B64;
+  border-radius: 6px;
+  padding: 30px 20px;
+  height: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vantagem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.vantagem-card .icon-svg {
+  margin-bottom: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vantagem-card h5 {
+  color: #0B2B64;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.vantagem-card p {
+  color: #2C3C69;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+
+
+
+/* ===================================
+   RESPONSIVIDADE
+=================================== */
+
+
+/* ≤ 1199px */
+@media (max-width: 1199px) {
+  #contato .linhamaior {
+    display: none;
+  }
+
+  #contato h5 {
+    padding-bottom: 16px;
+  }
+
+  #produtos-destaques .col-md-3 {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+}
+
+/* ≤ 1200px */
+@media (max-width: 1200px) {
+  #bannerCarousel {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* ≤ 992px */
+@media (max-width: 992px) {
+
+  .carousel-grande {
+    display: none !important;
+  }
+
+  .carousel-medio {
+    display: block !important;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      margin-inline: -60px;
+}
+
+  .card .d-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card .btn {
+    width: 100%;
+    max-width: 180px;
+  }
+
+  #novidades .card .d-flex {
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #novidades .card .btn {
+    width: auto;
+    min-width: 110px;
+  }
+
+  #produtos-destaques .col-md-3{
+    flex: 0 0 41%;
+    max-width: 100%;
+  }
+
+  #produtos-destaques .texto-destaque {
+    padding-bottom: 60px;
+  }
+
+  #contato svg {
+    width: 25px;
+    margin-right: -1px;
+  }
+
+   #contato h5 {
+    font-size: 2rem;
+  }
+
+  #produtos-destaques h1 {
+  font-size: 2rem;
+  }
+
+  .linha-com-texto h3 {
+    font-size: 1.9rem;
+  }
+
+  .container-card {
+    padding-block: 60px;
+  }
+
+}
+
+/* ≤ 767px */
+@media (max-width: 767px) {
+
+  footer {
+    text-align: center;
+  }
+
+  .vantagem-card {
+    padding: 25px 15px;
+  }
+
+  #vantagens .titulo {
+    font-size: 2rem;
+  }
+
+  .vantagem-card .icon-svg {
+    height: 36px;
+  }
+  
+.carousel-pequeno {
+  display: block !important;
+}
+
+.carousel-medio {
+  display: none !important;
+}
+
+  .carousel-pequeno .carousel-inner {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+  }
+
+  .carousel-pequeno .carousel-item{
+    max-width: 80% !important;
+    margin: 0 auto;
+  }
+
+  #contato .contato-linha {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 12px;
+  }
+
+    .carousel-control-prev,
+  .carousel-control-next {
+      margin-inline: -10px;
+}
+
+
+  #contato .contato-linha svg {
+    margin-right: 8px;
+  }
+
+  #contato .linhas {
+    height: 20px;
+  }
+
+  #contato span {
+    font-size: 1rem;
+    margin: 0 4px;
+  }
+
+  #contato .linhamaior {
+    display: none;
+  }
+
+  #produtos-destaques .col-md-3,
+  #produtos-destaques .col-sm-6 {
+    flex: 0 0 70% !important;
+    max-width: 100% !important;
+  }
+
+  #produtos-destaques .row {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+  #produtos-destaques .card.h-100 {
+    height: 100%;
+  }
+
+  #produtos-destaques .card .d-flex {
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+
+  #produtos-destaques .card .btn {
+    width: auto;
+    min-width: 110px;
+  }
+
+  #produtos-destaques .card-img-top {
+    width: auto;
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .carousel-item .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  #contato h5 {
+    font-size: 1.8rem;
+  }
+
+  #contato svg {
+    width: 26px;
+    margin-right: -1px !important;
+  }
+
+  #produtos-destaques h1 {
+    font-size: 1.8rem;
+  }
+
+  #produtos-destaques .texto-destaque{
+    padding-bottom: 50px ;
+  }
+
+  .linha-com-texto h3 {
+    font-size: 1.8rem;
+  }
+
+  .container-card {
+    padding-block: 50px;
+  }
+
+  #novidades h2 {
+    font-size: 2rem;
+  }
+
+  #novidades h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+ .carousel-item .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+    .carousel-pequeno .carousel-item{
+    max-width: 80% !important;
+    margin: 0 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

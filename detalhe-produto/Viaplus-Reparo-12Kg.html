@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Produto | Gomes RJ</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- CSS personalizado -->
+<link rel="stylesheet" href="../css/detalhe-produto.css">
+<link rel="stylesheet" href="../css/global.css">
+
+<link rel="icon" href="/img/logo-gomesRj.png">
+
+  <!-- CSS Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ===== MENU ===== -->
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+<div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+    <img class="logo-gomesRj" src="../img/logo-gomesRj.png" alt="">
+    </a>
+
+    <!-- Botão menu mobile -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Alternar navegação">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Itens do menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="menuNav">
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="/produtos.html">Produtos</a></li>
+        <li class="nav-item"><a class="nav-link" href="/sobre.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contatos.html">Contatos</a></li>
+    </ul>
+    </div>
+</div>
+</header>
+
+<div class="container">
+        <!-- Breadcrumb -->
+<nav class="breadcrumb">
+    <a href="/index.html" class="pr-1">Início</a> <span class="pr-1">›</span>  
+    <a href="/produtos.html" class="pr-1">Produtos</a> <span class="pr-1">›</span>
+    <span class="pr-1">Viaplus Reparo 12Kg</span>
+</nav>
+
+<!-- Botão Voltar -->
+<a href="/produtos.html" class="btn-voltar">← Voltar para todos os produtos</a>
+
+<!-- Detalhes do produto -->
+<div class="product-details">
+    <div>
+    <img id="mainImage" src="../img/Viapol/viaplus-reparo-18-(1).webp" alt="Viaplus Reparo 12Kg" class="main-img">
+
+    <!-- Miniaturas -->
+    <div class="thumbs mt-3">
+        <img src="../img/Viapol/viaplus-reparo-18-(1).webp" class="thumb active">
+        <img src="../img/Viapol/viaplus-reparo-18-(2).webp" alt="Viaplus Reparo 12Kg" class="thumb">
+        <img src="../img/Viapol/viaplus-reparo-18-(3).webp" alt="Viaplus Reparo 12Kg" class="thumb">
+    </div> 
+    </div>
+    
+
+
+    <div class="product-info">
+    <h2>Viaplus Reparo 12Kg</h2>
+    <p class="marca"><strong>Marca:</strong> 
+    <img src="../img/Viapol/logo-viapol.png" alt="logo viapol">
+    </p>
+    <p class="price">Consulte</p>
+    <p class="mini-descricao">Impermeabilizante monocomponente branco, à base de cimentos especiais, aditivos minerais e polímeros.</p>
+
+    <button class="btn-comprar" data-product="Viaplus Reparo 12Kg">
+    <svg class="icon-whatsapp" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.6 14C16.4 13.9 15.1 13.3 14.9 13.2C14.7 13.1 14.5 13.1 14.3 13.3C14.1 13.5 13.7 14.1 13.5 14.3C13.4 14.5 13.2 14.5 13 14.4C12.3 14.1 11.6 13.7 11 13.2C10.5 12.7 10 12.1 9.6 11.5C9.5 11.3 9.6 11.1 9.7 11C9.8 10.9 9.9 10.7 10.1 10.6C10.2 10.5 10.3 10.3 10.3 10.2C10.4 10.1 10.4 9.9 10.3 9.8C10.2 9.7 9.7 8.5 9.5 8C9.4 7.3 9.2 7.3 9 7.3C8.9 7.3 8.7 7.3 8.5 7.3C8.3 7.3 8 7.5 7.9 7.6C7.3 8.2 7 8.9 7 9.7C7.1 10.6 7.4 11.5 8 12.3C9.1 13.9 10.5 15.2 12.2 16C12.7 16.2 13.1 16.4 13.6 16.5C14.1 16.7 14.6 16.7 15.2 16.6C15.9 16.5 16.5 16 16.9 15.4C17.1 15 17.1 14.6 17 14.2C17 14.2 16.8 14.1 16.6 14ZM19.1 4.9C15.2 1 8.9 1 5 4.9C1.8 8.1 1.2 13 3.4 16.9L2 22L7.3 20.6C8.8 21.4 10.4 21.8 12 21.8C17.5 21.8 21.9 17.4 21.9 11.9C22 9.3 20.9 6.8 19.1 4.9ZM16.4 18.9C15.1 19.7 13.6 20.2 12 20.2C10.5 20.2 9.1 19.8 7.8 19.1L7.5 18.9L4.4 19.7L5.2 16.7L5 16.4C2.6 12.4 3.8 7.4 7.7 4.9C11.6 2.4 16.6 3.7 19 7.5C21.4 11.4 20.3 16.5 16.4 18.9Z" fill="#F9F9F9"/>
+    </svg>
+    Comprar via WhatsApp
+    </button>
+
+    <div class="regioes">
+        <h5>Regiões do Rio de Janeiro que entregamos:</h5>
+        <ul>
+        <li>Zona Norte</li>
+        <li>Zona Oeste</li>
+        <li>Zona Sul</li>
+        <li>Baixada Fluminense</li>
+        <li>Niterói e São Gonçalo</li>
+        </ul>
+    </div>
+    </div>
+    </div>
+
+<div class="descricao mt-4">
+    <h4>Descrição detalhada</h4>
+    <p>
+    Impermeabilizante monocomponente branco, à base de cimentos especiais, aditivos minerais e polímeros, indicado para vedação e tratamento de umidade, mofo e bolor em paredes internas e externas.<br><br>
+
+    <b>Vantagens</b><br>
+    Resistente à umidade ascendente;<br>
+    Aplicação direta sobre reboco íntegro e blocos de concreto e cerâmico;<br>
+    Fácil aplicação;<br>
+    Pode ser usado como acabamento final;<br>
+    Aceita pintura à base de água.<br><br>
+
+    <b>Utilização</b><br>
+    É utilizado para impermeabilização e eliminação da umidade em paredes internas e externas.<br>
+    Aplicável também em paredes internas de Drywall (gesso acartonado).<br><br>
+
+    <b>Preparação da Superfície:</b><br>
+    Remover todas as partículas soltas ou desagregadas, mofo, bolor, tinta, textura e carbonatação até atingir uma superfície firme e adequada para receber o Viaplus Reparo.<br><br>
+
+    <b>Preparação do Produto:</b><br>
+    Para embalagem de 12 kg, adicione em um recipiente limpo 3 litros de água limpa (12 medidas do dosador de 250 ml).<br>
+    Adicione aos poucos o Viaplus Reparo e misture mecanicamente por no mínimo 3 minutos ou manualmente por no mínimo 5 minutos, até atingir uma pasta homogênea e sem grumos.<br>
+    Para embalagem de 4 kg do Viaplus Reparo, utilizar 1 litro de água limpa (4 medidas do dosador de 250 ml).<br>
+    Após a mistura, o tempo de utilização é de 30 a 40 minutos na temperatura média de 25°C. Após esse período, não recomendamos o uso.<br><br>
+
+    <b>Ferramentas:</b><br>
+    Trincha, broxa e desempenadeira metálica lisa.<br><br>
+
+    <b>Aplicação do Produto:</b><br>
+    Umedecer bem a superfície com água limpa utilizando trincha ou broxa.<br>
+    Aplique uma camada de Viaplus Reparo com uma desempenadeira metálica lisa em espessura entre 1,5 a 3 mm.<br>
+    Caso necessário, aplique uma segunda camada até atingir a espessura total de no máximo 4 mm.<br>
+    Se desejar, realize o acabamento em seguida com uma esponja úmida ou, após 2 horas, realize um leve lixamento com lixa fina.<br>
+    Aguarde 24 horas para realizar a pintura.
+
+    </p>
+</div>
+
+<!-- Produtos relacionados -->
+<div class="col-lg-12 produtos">
+    <h4>Produtos Relacionados</h4>
+    <div class="row" id="productGrid">
+    <!-- Aqui entram os produtos -->
+    <div class="col-lg-3 col-md-5 col-sm-6 mb-4 product-card" data-brand="viapol" data-category="primers" data-price="179.00">
+        <div class="card h-100 shadow-sm">
+          <img src="/img/Viapol/Ecoprimer-18-lt.webp" class="card-img-top" alt="Ecoprimer 18 lt (Primer a base de água)">
+          <div class="card-body">
+            <h5 class="card-title pb-3">Ecoprimer 18 lt (Primer a base de água)</h5>
+            <p class="card-text">Pintura de imprimação à base d'água composta de asfaltos modificados e aditivos isento de solventes.</p>
+            <p class="text-success font-weight-bold">R$ 179,00</p>
+            <div class="d-flex justify-content-between">
+              <a href="../detalhe-produto/ecoprimer-balde-18L.html" class="btn btn-sm btn-primary">
+                <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.3066 0C13.1964 0 15.7263 1.73088 17.4648 3.33203C18.3481 4.14547 19.0613 4.9564 19.5527 5.56348C19.7988 5.86731 19.9905 6.12174 20.1221 6.30176C20.1878 6.39186 20.2385 6.46367 20.2734 6.51367C20.2909 6.53865 20.305 6.55842 20.3145 6.57227L20.3252 6.58789L20.3291 6.59277L20.3301 6.59473L20.623 7.03125L20.3301 7.46777L20.3291 7.46973L20.3252 7.47461L20.3145 7.49023C20.305 7.50408 20.2909 7.52385 20.2734 7.54883C20.2385 7.59883 20.1878 7.67064 20.1221 7.76074C19.9905 7.94076 19.7988 8.19519 19.5527 8.49902C19.0613 9.1061 18.3481 9.91704 17.4648 10.7305C15.7263 12.3316 13.1964 14.0625 10.3066 14.0625C7.41692 14.0624 4.8869 12.3316 3.14844 10.7305C2.26534 9.91711 1.55298 9.10605 1.06152 8.49902C0.815354 8.19503 0.622772 7.94082 0.491211 7.76074C0.425443 7.67071 0.374772 7.5988 0.339844 7.54883C0.322443 7.52394 0.309255 7.50405 0.299805 7.49023L0.288086 7.47461L0.285156 7.46973L0.28418 7.46777L0 7.04492L0.285156 6.59277L0.288086 6.58789L0.299805 6.57227C0.309255 6.55845 0.322443 6.53856 0.339844 6.51367C0.374772 6.4637 0.425443 6.39179 0.491211 6.30176C0.622772 6.12168 0.815355 5.86747 1.06152 5.56348C1.55298 4.95645 2.26533 4.14539 3.14844 3.33203C4.8869 1.73092 7.41692 0.000106593 10.3066 0ZM10.3066 1.5625C8.01892 1.56261 5.86149 2.95677 4.20703 4.48047C3.39371 5.22954 2.7327 5.98111 2.27539 6.5459C2.1261 6.7303 1.99962 6.89472 1.89648 7.03125C1.99962 7.16778 2.1261 7.3322 2.27539 7.5166C2.7327 8.08139 3.39371 8.83298 4.20703 9.58203C5.86149 11.1057 8.01893 12.4999 10.3066 12.5C12.5942 12.5 14.7518 11.1057 16.4062 9.58203C17.2195 8.83308 17.8806 8.08137 18.3379 7.5166C18.4873 7.33212 18.6145 7.16781 18.7178 7.03125C18.6145 6.89469 18.4873 6.73038 18.3379 6.5459C17.8806 5.98113 17.2195 5.22945 16.4062 4.48047C14.7518 2.95679 12.5942 1.5625 10.3066 1.5625ZM10.3066 3.125C12.464 3.125 14.2129 4.87389 14.2129 7.03125C14.2129 9.18865 12.464 10.9375 10.3066 10.9375C8.1494 10.9374 6.40039 9.18859 6.40039 7.03125C6.40039 4.87394 8.1494 3.12509 10.3066 3.125ZM10.3066 4.6875C9.01234 4.68759 7.96289 5.73693 7.96289 7.03125C7.96289 8.32557 9.01234 9.37491 10.3066 9.375C11.6011 9.375 12.6504 8.32562 12.6504 7.03125C12.6504 5.73688 11.6011 4.6875 10.3066 4.6875Z" fill="white"/>
+                </svg>
+                Detalhes</a>
+                <!-- Ícone WhatsApp -->
+              <a href="#" class="btn btn-sm btn-success">
+                <svg class="mb-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.8333 11.6667C13.6667 11.5834 12.5833 11.0834 12.4167 11C12.25 10.9167 12.0833 10.9167 11.9167 11.0834C11.75 11.25 11.4167 11.75 11.25 11.9167C11.1667 12.0834 11 12.0834 10.8333 12C10.25 11.75 9.66666 11.4167 9.16666 11C8.74999 10.5834 8.33332 10.0834 7.99999 9.58337C7.91666 9.41671 7.99999 9.25004 8.08332 9.16671C8.16666 9.08337 8.24999 8.91671 8.41666 8.83337C8.49999 8.75004 8.58332 8.58337 8.58332 8.50004C8.66666 8.41671 8.66666 8.25004 8.58332 8.16671C8.49999 8.08337 8.08332 7.08337 7.91666 6.66671C7.83332 6.08337 7.66666 6.08337 7.49999 6.08337C7.41666 6.08337 7.24999 6.08337 7.08332 6.08337C6.91666 6.08337 6.66666 6.25004 6.58332 6.33337C6.08332 6.83337 5.83332 7.41671 5.83332 8.08337C5.91666 8.83337 6.16666 9.58337 6.66666 10.25C7.58332 11.5834 8.74999 12.6667 10.1667 13.3334C10.5833 13.5 10.9167 13.6667 11.3333 13.75C11.75 13.9167 12.1667 13.9167 12.6667 13.8334C13.25 13.75 13.75 13.3334 14.0833 12.8334C14.25 12.5 14.25 12.1667 14.1667 11.8334C14.1667 11.8334 14 11.75 13.8333 11.6667ZM15.9167 4.08337C12.6667 0.833374 7.41666 0.833374 4.16666 4.08337C1.49999 6.75004 0.99999 10.8334 2.83332 14.0834L1.66666 18.3334L6.08332 17.1667C7.33332 17.8334 8.66666 18.1667 9.99999 18.1667C14.5833 18.1667 18.25 14.5 18.25 9.91671C18.3333 7.75004 17.4167 5.66671 15.9167 4.08337ZM13.6667 15.75C12.5833 16.4167 11.3333 16.8334 9.99999 16.8334C8.74999 16.8334 7.58332 16.5 6.49999 15.9167L6.24999 15.75L3.66666 16.4167L4.33332 13.9167L4.16666 13.6667C2.16666 10.3334 3.16666 6.16671 6.41666 4.08337C9.66666 2.00004 13.8333 3.08337 15.8333 6.25004C17.8333 9.50004 16.9167 13.75 13.6667 15.75Z" fill="#F9F9F9"/>
+                </svg>
+                 Comprar</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-5 col-sm-6 mb-4 product-card" data-brand="viapol" data-category="impermeabilizante" data-price="379.00">
+    <div class="card h-100 shadow-sm">
+    <img src="/img/Viapol/viabit-lata(1).jpg" class="card-img-top" alt="Viabit Lata 18 Lt">
+    <div class="card-body">
+        <h5 class="card-title">Viabit Lata 18 Lt</h5>
+        <p class="card-text">Viabit é uma pintura asfáltica, composta de plastificantes e solventes orgânicos, de alta aderência.</p>
+        <p class="text-success font-weight-bold">R$ 379,00</p>
+        <div class="d-flex justify-content-between">
+        <a href="../detalhe-produto/viabit-lata-18lt.html" class="btn btn-sm btn-primary">
+            <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.3066 0C13.1964 0 15.7263 1.73088 17.4648 3.33203C18.3481 4.14547 19.0613 4.9564 19.5527 5.56348C19.7988 5.86731 19.9905 6.12174 20.1221 6.30176C20.1878 6.39186 20.2385 6.46367 20.2734 6.51367C20.2909 6.53865 20.305 6.55842 20.3145 6.57227L20.3252 6.58789L20.3291 6.59277L20.3301 6.59473L20.623 7.03125L20.3301 7.46777L20.3291 7.46973L20.3252 7.47461L20.3145 7.49023C20.305 7.50408 20.2909 7.52385 20.2734 7.54883C20.2385 7.59883 20.1878 7.67064 20.1221 7.76074C19.9905 7.94076 19.7988 8.19519 19.5527 8.49902C19.0613 9.1061 18.3481 9.91704 17.4648 10.7305C15.7263 12.3316 13.1964 14.0625 10.3066 14.0625C7.41692 14.0624 4.8869 12.3316 3.14844 10.7305C2.26534 9.91711 1.55298 9.10605 1.06152 8.49902C0.815354 8.19503 0.622772 7.94082 0.491211 7.76074C0.425443 7.67071 0.374772 7.5988 0.339844 7.54883C0.322443 7.52394 0.309255 7.50405 0.299805 7.49023L0.288086 7.47461L0.285156 7.46973L0.28418 7.46777L0 7.04492L0.285156 6.59277L0.288086 6.58789L0.299805 6.57227C0.309255 6.55845 0.322443 6.53856 0.339844 6.51367C0.374772 6.4637 0.425443 6.39179 0.491211 6.30176C0.622772 6.12168 0.815355 5.86747 1.06152 5.56348C1.55298 4.95645 2.26533 4.14539 3.14844 3.33203C4.8869 1.73092 7.41692 0.000106593 10.3066 0ZM10.3066 1.5625C8.01892 1.56261 5.86149 2.95677 4.20703 4.48047C3.39371 5.22954 2.7327 5.98111 2.27539 6.5459C2.1261 6.7303 1.99962 6.89472 1.89648 7.03125C1.99962 7.16778 2.1261 7.3322 2.27539 7.5166C2.7327 8.08139 3.39371 8.83298 4.20703 9.58203C5.86149 11.1057 8.01893 12.4999 10.3066 12.5C12.5942 12.5 14.7518 11.1057 16.4062 9.58203C17.2195 8.83308 17.8806 8.08137 18.3379 7.5166C18.4873 7.33212 18.6145 7.16781 18.7178 7.03125C18.6145 6.89469 18.4873 6.73038 18.3379 6.5459C17.8806 5.98113 17.2195 5.22945 16.4062 4.48047C14.7518 2.95679 12.5942 1.5625 10.3066 1.5625ZM10.3066 3.125C12.464 3.125 14.2129 4.87389 14.2129 7.03125C14.2129 9.18865 12.464 10.9375 10.3066 10.9375C8.1494 10.9374 6.40039 9.18859 6.40039 7.03125C6.40039 4.87394 8.1494 3.12509 10.3066 3.125ZM10.3066 4.6875C9.01234 4.68759 7.96289 5.73693 7.96289 7.03125C7.96289 8.32557 9.01234 9.37491 10.3066 9.375C11.6011 9.375 12.6504 8.32562 12.6504 7.03125C12.6504 5.73688 11.6011 4.6875 10.3066 4.6875Z" fill="white"/>
+            </svg>
+            Detalhes</a>
+            <!-- Ícone WhatsApp -->
+        <a href="#" class="btn btn-sm btn-success">
+            <svg class="mb-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.8333 11.6667C13.6667 11.5834 12.5833 11.0834 12.4167 11C12.25 10.9167 12.0833 10.9167 11.9167 11.0834C11.75 11.25 11.4167 11.75 11.25 11.9167C11.1667 12.0834 11 12.0834 10.8333 12C10.25 11.75 9.66666 11.4167 9.16666 11C8.74999 10.5834 8.33332 10.0834 7.99999 9.58337C7.91666 9.41671 7.99999 9.25004 8.08332 9.16671C8.16666 9.08337 8.24999 8.91671 8.41666 8.83337C8.49999 8.75004 8.58332 8.58337 8.58332 8.50004C8.66666 8.41671 8.66666 8.25004 8.58332 8.16671C8.49999 8.08337 8.08332 7.08337 7.91666 6.66671C7.83332 6.08337 7.66666 6.08337 7.49999 6.08337C7.41666 6.08337 7.24999 6.08337 7.08332 6.08337C6.91666 6.08337 6.66666 6.25004 6.58332 6.33337C6.08332 6.83337 5.83332 7.41671 5.83332 8.08337C5.91666 8.83337 6.16666 9.58337 6.66666 10.25C7.58332 11.5834 8.74999 12.6667 10.1667 13.3334C10.5833 13.5 10.9167 13.6667 11.3333 13.75C11.75 13.9167 12.1667 13.9167 12.6667 13.8334C13.25 13.75 13.75 13.3334 14.0833 12.8334C14.25 12.5 14.25 12.1667 14.1667 11.8334C14.1667 11.8334 14 11.75 13.8333 11.6667ZM15.9167 4.08337C12.6667 0.833374 7.41666 0.833374 4.16666 4.08337C1.49999 6.75004 0.99999 10.8334 2.83332 14.0834L1.66666 18.3334L6.08332 17.1667C7.33332 17.8334 8.66666 18.1667 9.99999 18.1667C14.5833 18.1667 18.25 14.5 18.25 9.91671C18.3333 7.75004 17.4167 5.66671 15.9167 4.08337ZM13.6667 15.75C12.5833 16.4167 11.3333 16.8334 9.99999 16.8334C8.74999 16.8334 7.58332 16.5 6.49999 15.9167L6.24999 15.75L3.66666 16.4167L4.33332 13.9167L4.16666 13.6667C2.16666 10.3334 3.16666 6.16671 6.41666 4.08337C9.66666 2.00004 13.8333 3.08337 15.8333 6.25004C17.8333 9.50004 16.9167 13.75 13.6667 15.75Z" fill="#F9F9F9"/>
+            </svg>
+            Comprar</a>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-lg-3 col-md-5 col-sm-6 mb-4 product-card" data-brand="viapol" data-category="impermeabilizante" data-price="">
+    <div class="card h-100 shadow-sm">
+    <img src="/img/Viapol/viabit-acqua-18.webp" class="card-img-top" alt="Viabit Acqua 18 lt">
+    <div class="card-body">
+    <h5 class="card-title">Viabit Acqua 18 lt</h5>
+    <p class="card-text">É uma emulsão asfáltica especialmente desenvolvida para impermeabilizações sob a forma de pintura</p>
+    <p class="text-success font-weight-bold">Consulte</p>
+    <div class="d-flex justify-content-between">
+    <a href="../detalhe-produto/viabit-Acqua-18-lt.html" class="btn btn-sm btn-primary">
+        <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.3066 0C13.1964 0 15.7263 1.73088 17.4648 3.33203C18.3481 4.14547 19.0613 4.9564 19.5527 5.56348C19.7988 5.86731 19.9905 6.12174 20.1221 6.30176C20.1878 6.39186 20.2385 6.46367 20.2734 6.51367C20.2909 6.53865 20.305 6.55842 20.3145 6.57227L20.3252 6.58789L20.3291 6.59277L20.3301 6.59473L20.623 7.03125L20.3301 7.46777L20.3291 7.46973L20.3252 7.47461L20.3145 7.49023C20.305 7.50408 20.2909 7.52385 20.2734 7.54883C20.2385 7.59883 20.1878 7.67064 20.1221 7.76074C19.9905 7.94076 19.7988 8.19519 19.5527 8.49902C19.0613 9.1061 18.3481 9.91704 17.4648 10.7305C15.7263 12.3316 13.1964 14.0625 10.3066 14.0625C7.41692 14.0624 4.8869 12.3316 3.14844 10.7305C2.26534 9.91711 1.55298 9.10605 1.06152 8.49902C0.815354 8.19503 0.622772 7.94082 0.491211 7.76074C0.425443 7.67071 0.374772 7.5988 0.339844 7.54883C0.322443 7.52394 0.309255 7.50405 0.299805 7.49023L0.288086 7.47461L0.285156 7.46973L0.28418 7.46777L0 7.04492L0.285156 6.59277L0.288086 6.58789L0.299805 6.57227C0.309255 6.55845 0.322443 6.53856 0.339844 6.51367C0.374772 6.4637 0.425443 6.39179 0.491211 6.30176C0.622772 6.12168 0.815355 5.86747 1.06152 5.56348C1.55298 4.95645 2.26533 4.14539 3.14844 3.33203C4.8869 1.73092 7.41692 0.000106593 10.3066 0ZM10.3066 1.5625C8.01892 1.56261 5.86149 2.95677 4.20703 4.48047C3.39371 5.22954 2.7327 5.98111 2.27539 6.5459C2.1261 6.7303 1.99962 6.89472 1.89648 7.03125C1.99962 7.16778 2.1261 7.3322 2.27539 7.5166C2.7327 8.08139 3.39371 8.83298 4.20703 9.58203C5.86149 11.1057 8.01893 12.4999 10.3066 12.5C12.5942 12.5 14.7518 11.1057 16.4062 9.58203C17.2195 8.83308 17.8806 8.08137 18.3379 7.5166C18.4873 7.33212 18.6145 7.16781 18.7178 7.03125C18.6145 6.89469 18.4873 6.73038 18.3379 6.5459C17.8806 5.98113 17.2195 5.22945 16.4062 4.48047C14.7518 2.95679 12.5942 1.5625 10.3066 1.5625ZM10.3066 3.125C12.464 3.125 14.2129 4.87389 14.2129 7.03125C14.2129 9.18865 12.464 10.9375 10.3066 10.9375C8.1494 10.9374 6.40039 9.18859 6.40039 7.03125C6.40039 4.87394 8.1494 3.12509 10.3066 3.125ZM10.3066 4.6875C9.01234 4.68759 7.96289 5.73693 7.96289 7.03125C7.96289 8.32557 9.01234 9.37491 10.3066 9.375C11.6011 9.375 12.6504 8.32562 12.6504 7.03125C12.6504 5.73688 11.6011 4.6875 10.3066 4.6875Z" fill="white"/>
+        </svg>
+        Detalhes</a>
+        <!-- Ícone WhatsApp -->
+    <a href="#" class="btn btn-sm btn-success">
+        <svg class="mb-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.8333 11.6667C13.6667 11.5834 12.5833 11.0834 12.4167 11C12.25 10.9167 12.0833 10.9167 11.9167 11.0834C11.75 11.25 11.4167 11.75 11.25 11.9167C11.1667 12.0834 11 12.0834 10.8333 12C10.25 11.75 9.66666 11.4167 9.16666 11C8.74999 10.5834 8.33332 10.0834 7.99999 9.58337C7.91666 9.41671 7.99999 9.25004 8.08332 9.16671C8.16666 9.08337 8.24999 8.91671 8.41666 8.83337C8.49999 8.75004 8.58332 8.58337 8.58332 8.50004C8.66666 8.41671 8.66666 8.25004 8.58332 8.16671C8.49999 8.08337 8.08332 7.08337 7.91666 6.66671C7.83332 6.08337 7.66666 6.08337 7.49999 6.08337C7.41666 6.08337 7.24999 6.08337 7.08332 6.08337C6.91666 6.08337 6.66666 6.25004 6.58332 6.33337C6.08332 6.83337 5.83332 7.41671 5.83332 8.08337C5.91666 8.83337 6.16666 9.58337 6.66666 10.25C7.58332 11.5834 8.74999 12.6667 10.1667 13.3334C10.5833 13.5 10.9167 13.6667 11.3333 13.75C11.75 13.9167 12.1667 13.9167 12.6667 13.8334C13.25 13.75 13.75 13.3334 14.0833 12.8334C14.25 12.5 14.25 12.1667 14.1667 11.8334C14.1667 11.8334 14 11.75 13.8333 11.6667ZM15.9167 4.08337C12.6667 0.833374 7.41666 0.833374 4.16666 4.08337C1.49999 6.75004 0.99999 10.8334 2.83332 14.0834L1.66666 18.3334L6.08332 17.1667C7.33332 17.8334 8.66666 18.1667 9.99999 18.1667C14.5833 18.1667 18.25 14.5 18.25 9.91671C18.3333 7.75004 17.4167 5.66671 15.9167 4.08337ZM13.6667 15.75C12.5833 16.4167 11.3333 16.8334 9.99999 16.8334C8.74999 16.8334 7.58332 16.5 6.49999 15.9167L6.24999 15.75L3.66666 16.4167L4.33332 13.9167L4.16666 13.6667C2.16666 10.3334 3.16666 6.16671 6.41666 4.08337C9.66666 2.00004 13.8333 3.08337 15.8333 6.25004C17.8333 9.50004 16.9167 13.75 13.6667 15.75Z" fill="#F9F9F9"/>
+        </svg>
+        Comprar</a>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-lg-3 col-md-5 col-sm-6 mb-4 product-card" data-brand="viapol" data-category="impermeabilizante" data-price="">
+      <div class="card h-100 shadow-sm">
+        <img src="/img/Viapol/viabit-antiraiz-18.webp" class="card-img-top" alt="Viapol Pó 2 15kg Cimento Acelerador Tamponamento">
+        <div class="card-body">
+          <h5 class="card-title">Viabit Anti Raiz 18 lt</h5>
+          <p class="card-text">Pintura impermeabilizante, composta de asfaltos modificados, plastificantes, aditivos especiais...</p>
+          <p class="text-success font-weight-bold">Consulte</p>
+          <div class="d-flex justify-content-between">
+            <a href="../detalhe-produto/viabit-anti-raiz-18lt.html" class="btn btn-sm btn-primary">
+              <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.3066 0C13.1964 0 15.7263 1.73088 17.4648 3.33203C18.3481 4.14547 19.0613 4.9564 19.5527 5.56348C19.7988 5.86731 19.9905 6.12174 20.1221 6.30176C20.1878 6.39186 20.2385 6.46367 20.2734 6.51367C20.2909 6.53865 20.305 6.55842 20.3145 6.57227L20.3252 6.58789L20.3291 6.59277L20.3301 6.59473L20.623 7.03125L20.3301 7.46777L20.3291 7.46973L20.3252 7.47461L20.3145 7.49023C20.305 7.50408 20.2909 7.52385 20.2734 7.54883C20.2385 7.59883 20.1878 7.67064 20.1221 7.76074C19.9905 7.94076 19.7988 8.19519 19.5527 8.49902C19.0613 9.1061 18.3481 9.91704 17.4648 10.7305C15.7263 12.3316 13.1964 14.0625 10.3066 14.0625C7.41692 14.0624 4.8869 12.3316 3.14844 10.7305C2.26534 9.91711 1.55298 9.10605 1.06152 8.49902C0.815354 8.19503 0.622772 7.94082 0.491211 7.76074C0.425443 7.67071 0.374772 7.5988 0.339844 7.54883C0.322443 7.52394 0.309255 7.50405 0.299805 7.49023L0.288086 7.47461L0.285156 7.46973L0.28418 7.46777L0 7.04492L0.285156 6.59277L0.288086 6.58789L0.299805 6.57227C0.309255 6.55845 0.322443 6.53856 0.339844 6.51367C0.374772 6.4637 0.425443 6.39179 0.491211 6.30176C0.622772 6.12168 0.815355 5.86747 1.06152 5.56348C1.55298 4.95645 2.26533 4.14539 3.14844 3.33203C4.8869 1.73092 7.41692 0.000106593 10.3066 0ZM10.3066 1.5625C8.01892 1.56261 5.86149 2.95677 4.20703 4.48047C3.39371 5.22954 2.7327 5.98111 2.27539 6.5459C2.1261 6.7303 1.99962 6.89472 1.89648 7.03125C1.99962 7.16778 2.1261 7.3322 2.27539 7.5166C2.7327 8.08139 3.39371 8.83298 4.20703 9.58203C5.86149 11.1057 8.01893 12.4999 10.3066 12.5C12.5942 12.5 14.7518 11.1057 16.4062 9.58203C17.2195 8.83308 17.8806 8.08137 18.3379 7.5166C18.4873 7.33212 18.6145 7.16781 18.7178 7.03125C18.6145 6.89469 18.4873 6.73038 18.3379 6.5459C17.8806 5.98113 17.2195 5.22945 16.4062 4.48047C14.7518 2.95679 12.5942 1.5625 10.3066 1.5625ZM10.3066 3.125C12.464 3.125 14.2129 4.87389 14.2129 7.03125C14.2129 9.18865 12.464 10.9375 10.3066 10.9375C8.1494 10.9374 6.40039 9.18859 6.40039 7.03125C6.40039 4.87394 8.1494 3.12509 10.3066 3.125ZM10.3066 4.6875C9.01234 4.68759 7.96289 5.73693 7.96289 7.03125C7.96289 8.32557 9.01234 9.37491 10.3066 9.375C11.6011 9.375 12.6504 8.32562 12.6504 7.03125C12.6504 5.73688 11.6011 4.6875 10.3066 4.6875Z" fill="white"/>
+              </svg>
+              Detalhes</a>
+              <!-- Ícone WhatsApp -->
+            <a href="#" class="btn btn-sm btn-success">
+              <svg class="mb-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.8333 11.6667C13.6667 11.5834 12.5833 11.0834 12.4167 11C12.25 10.9167 12.0833 10.9167 11.9167 11.0834C11.75 11.25 11.4167 11.75 11.25 11.9167C11.1667 12.0834 11 12.0834 10.8333 12C10.25 11.75 9.66666 11.4167 9.16666 11C8.74999 10.5834 8.33332 10.0834 7.99999 9.58337C7.91666 9.41671 7.99999 9.25004 8.08332 9.16671C8.16666 9.08337 8.24999 8.91671 8.41666 8.83337C8.49999 8.75004 8.58332 8.58337 8.58332 8.50004C8.66666 8.41671 8.66666 8.25004 8.58332 8.16671C8.49999 8.08337 8.08332 7.08337 7.91666 6.66671C7.83332 6.08337 7.66666 6.08337 7.49999 6.08337C7.41666 6.08337 7.24999 6.08337 7.08332 6.08337C6.91666 6.08337 6.66666 6.25004 6.58332 6.33337C6.08332 6.83337 5.83332 7.41671 5.83332 8.08337C5.91666 8.83337 6.16666 9.58337 6.66666 10.25C7.58332 11.5834 8.74999 12.6667 10.1667 13.3334C10.5833 13.5 10.9167 13.6667 11.3333 13.75C11.75 13.9167 12.1667 13.9167 12.6667 13.8334C13.25 13.75 13.75 13.3334 14.0833 12.8334C14.25 12.5 14.25 12.1667 14.1667 11.8334C14.1667 11.8334 14 11.75 13.8333 11.6667ZM15.9167 4.08337C12.6667 0.833374 7.41666 0.833374 4.16666 4.08337C1.49999 6.75004 0.99999 10.8334 2.83332 14.0834L1.66666 18.3334L6.08332 17.1667C7.33332 17.8334 8.66666 18.1667 9.99999 18.1667C14.5833 18.1667 18.25 14.5 18.25 9.91671C18.3333 7.75004 17.4167 5.66671 15.9167 4.08337ZM13.6667 15.75C12.5833 16.4167 11.3333 16.8334 9.99999 16.8334C8.74999 16.8334 7.58332 16.5 6.49999 15.9167L6.24999 15.75L3.66666 16.4167L4.33332 13.9167L4.16666 13.6667C2.16666 10.3334 3.16666 6.16671 6.41666 4.08337C9.66666 2.00004 13.8333 3.08337 15.8333 6.25004C17.8333 9.50004 16.9167 13.75 13.6667 15.75Z" fill="#F9F9F9"/>
+              </svg>
+                Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+</div>
+</div>
+</div>
+
+<footer>
+<div class="container">
+    <div class="row">
+    <!-- Sobre / Links -->
+    <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase mb-3 font-weight-bold">Institucional</h5>
+        <ul class="list-unstyled">
+        <li><a href="/sobre.html" class="text-dark text-decoration-none d-block mb-2">Sobre a empresa</a></li>
+        <li><a href="/contatos.html" class="text-dark text-decoration-none d-block mb-2">Perguntas frequentes</a></li>
+        <li><a href="/contatos.html" class="text-dark text-decoration-none d-block mb-2">Tire suas dúvidas</a></li>
+        <li><a href="/produtos.html" class="text-dark text-decoration-none d-block mb-2">Nossos produtos</a></li>
+        </ul>
+    </div>
+
+    <!-- Contato -->
+    <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase mb-3 font-weight-bold">Contato</h5>
+        <p class="mb-1"><strong>Telefone: </strong> (21) 3332-8523 / (21) 2401-1356</p>
+        <p class="mb-1"><strong>Celular: </strong>(21) 99890-0724 / (21) 96821-8675</p>
+        <p><strong>Email: </strong>gomesrjmateriais@gmail.com</p>
+    </div>
+
+    <!-- Selo de segurança -->
+    <div class="col-md-4 text-center mb-3">
+        <h5 class="text-uppercase mb-3 font-weight-bold">Segurança</h5>
+        <a href="https://letsencrypt.org/" target="_blank" rel="noopener">
+        <img src="https://letsencrypt.org/images/letsencrypt-logo-horizontal.svg"
+            alt="Site Seguro - SSL Let's Encrypt" width="130">
+        </a>
+        <p class="small mt-2 mb-0">Site seguro com certificado SSL ativo</p>
+    </div>
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="text-center small">
+    © <span id="ano"></span> Nome da Loja — Todos os direitos reservados.<br>
+    Desenvolvido por <a href="https://www.instagram.com/devpamella/" class="text-dark font-weight-bold text-decoration-none">Pamella Freitas</a>
+    </div>
+</div>
+</footer>
+
+<!-- Modal para escolher o WhatsApp -->
+<div class="modal fade" id="whatsModal" tabindex="-1" role="dialog" aria-labelledby="whatsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content text-center p-4">
+      <h5 class="mb-3" id="whatsModalLabel">Escolha um número para atendimento</h5>
+      <div class="d-flex justify-content-around flex-wrap">
+        <button class="btn btn-success btn-whats m-2" data-number="5521968218675">
+        WhatsApp 1
+        </button>
+        <button class="btn btn-success btn-whats m-2" data-number="5521998900724">
+         WhatsApp 2
+        </button>
+      </div>
+      <small class="text-muted d-block mt-3">Você será redirecionado para o WhatsApp</small>
+    </div>
+  </div>
+</div>
+
+  <!-- Scripts Bootstrap e JS personalizado -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

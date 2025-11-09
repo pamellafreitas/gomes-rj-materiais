@@ -1,0 +1,256 @@
+body {
+    background-color: #F5F5F5;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background-color: #fff;
+  font-size: 14px;
+  margin-block: 25px;
+}
+.breadcrumb a {
+  color: #0B2B64;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Botão voltar */
+.btn-voltar {
+  display: inline-block;
+  margin-bottom: 30px;
+  background-color: #0B2B64;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-voltar:hover {
+  background-color: #103f90;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ======== PRODUTO ======== */
+
+/* Imagem principal */
+.main-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.main-img:hover {
+  transform: scale(1.03);
+}
+
+/* Miniaturas */
+.thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.thumb:hover {
+  border-color: #0B2B64;
+}
+.thumb.active {
+  border-color: #0B2B64;
+}
+
+.icon-whatsapp {
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+.product-info img {
+  width: 85px;
+}
+
+/* Lightbox */
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Informações do produto */
+.product-info h2 {
+  color: #0B2B64;
+  font-weight: bold;
+}
+.price {
+  font-size: 24px;
+  color: #0B2B64;
+  margin: 10px 0;
+}
+.btn-comprar,
+.btn-detalhes {
+  background-color: #198754;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+.btn-comprar:hover,
+.btn-detalhes:hover {
+  background-color: #19a664;
+}
+.regioes {
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Produtos relacionados */
+
+.produtos {
+    margin-left: -16px;
+    padding-block: 25px;
+}
+
+/* Layout padrão (lado a lado) */
+.product-details {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+@media (max-width: 1199px) {
+    .card .d-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .produtos h4 {
+        padding-block: 1.8rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+
+  h2 {
+    text-align: left !important;
+  }
+
+    .card .d-flex {
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+
+  #produtos-destaques .card .btn {
+    width: auto;
+    min-width: 110px;
+  }
+
+ .col-sm-6 {
+    flex: 0 0 50% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 0.85rem;
+    text-align: left !important;
+  }
+
+  .card-body p{
+    text-align: center !important;
+  }
+
+
+}
+
+@media (min-width: 768px){
+  .col-md-5 {
+    margin: 0 auto;
+  }
+}
+
+/* Quando a tela for menor que 576px */
+@media (max-width: 576px) {
+
+    h2 {
+    text-align: center !important;
+  }
+
+    .produtos {
+    margin-left: 0px;
+    }
+
+  .product-details {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .product-details img.main-img {
+    width: 100%;
+    max-width: 350px; 
+    height: auto;
+  }
+
+  .thumbs {
+    justify-content: center;
+  }
+
+  .product-info {
+    width: 100%;
+  }
+
+  .marca, .price {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 15px;               
+  flex-wrap: wrap;         
+}
+
+.mini-descricao {
+  text-align: center !important;
+}
+
+}
+
+
+
+

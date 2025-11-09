@@ -1,0 +1,178 @@
+#sobre-nos {
+    background-color: #F5F5F5;
+}
+
+.visao-missao-valores .col-sm-8 {
+    margin: 0 auto;
+}
+
+#visao-missao-valores svg{
+  margin: 0 auto;
+}
+
+.py-6 {
+  padding-block: 60px;
+}
+
+
+/* ===================================
+   VANTAGENS (USADO TAMBÉM EM VISÃO, MISSÃO E VALORES)
+=================================== */
+
+#vantagens,
+#visao-missao-valores {
+  background-color: #F5F5F5;
+  padding-block: 90px;
+}
+
+#vantagens .titulo,
+#visao-missao-valores .titulo {
+  color: #0B2B64;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#vantagens .subtitulo,
+#visao-missao-valores .subtitulo {
+  color: #444;
+  font-size: 1rem;
+}
+
+.vantagem-card {
+  background-color: #f5f5f5;
+  border: 1px solid #0B2B64;
+  border-radius: 6px;
+  padding: 30px 20px;
+  height: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vantagem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.vantagem-card .icon-svg {
+  margin-bottom: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vantagem-card h5 {
+  color: #0B2B64;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.vantagem-card p {
+  color: #2C3C69;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.produtos-section {
+  background-color: #001b4b;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.produtos-section h3 {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.btn-produtos {
+  background-color: #00B38A;
+  color: #f5f5f5;
+  border: none;
+  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-produtos:hover {
+  color: #f5f5f5;
+  background-color: #159a80;
+}
+
+/* ===================================
+   RESPONSIVIDADE
+=================================== */
+
+/* Quando a tela for menor que 992px */
+@media (max-width: 992px) {
+    .produtos-section h3{
+        font-size: 1.4rem;
+    }
+  #sobre-nos .row {
+    flex-direction: column; /* empilha imagem e texto */
+    text-align: center; /* centraliza textos */
+  }
+
+  #sobre-nos img {
+    margin-bottom: 30px; /* espaçamento entre imagem e texto */
+    max-width: 80%; /* deixa a imagem menor e proporcional */
+  }
+
+  #sobre-nos .col-md-6 {
+    max-width: 100%;
+  }
+
+  #sobre-nos p {
+    max-width: 90%;
+    margin: 0 auto; /* centraliza o texto */
+  }
+
+  #visao-missao-valores svg{
+    width: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+
+.produtos-section .container {
+    flex-direction: column; /* empilha texto e botão */
+    text-align: center; /* centraliza texto */
+  }
+
+  #vantagens .titulo, #visao-missao-valores .titulo {
+    font-size: 2rem;
+  }
+ 
+  #vantagens .row,
+  #visao-missao-valores .row {
+    justify-content: center;
+  }
+
+  #vantagens .col-md-4,
+  #vantagens .col-sm-6,
+  #visao-missao-valores .col-md-4,
+  #visao-missao-valores .col-sm-6 {
+    display: flex;
+    justify-content: center; 
+    padding-left: 15px; 
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  .vantagem-card {
+    max-width: 420px; 
+    width: 100%;
+    margin: 0 auto 20px; 
+    padding: 25px 15px; 
+    box-sizing: border-box;
+  }
+
+  
+  #visao-missao-valores .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

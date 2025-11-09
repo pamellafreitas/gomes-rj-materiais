@@ -1,0 +1,372 @@
+/* ===================================
+   GERAL
+=================================== */
+.page-title {
+  margin-top: 0 !important;
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* ===================================
+   FILTROS / SIDEBAR
+=================================== */
+.filters {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 20px;
+}
+
+.sidebar {
+  background: #fff;
+}
+
+#nossos-produtos {
+  background-color: #F5F5F5;
+  padding-bottom: 60px;
+}
+
+.btn-outline-primary {
+  border-color: #0B2B64 !important;
+  color: #0B2B64;
+}
+
+.btn-outline-primary:hover {
+  border-color: #0B2B64 !important;
+  background-color: #0B2B64 !important;
+  color: #f5f5f5;
+}
+
+.btn-outline-secondary {
+  border-color: #00B38A !important;
+  color: #00B38A;
+}
+
+.btn-outline-secondary:hover {
+  border-color: #00B38A !important;
+  background-color: #00B38A !important ;
+  color: #f5f5f5;
+}
+
+.btn-outline-primary.focus, .btn-outline-primary:focus {
+  box-shadow: 0 0 0 .2rem #2158b6;
+}
+
+.btn-outline-secondary.focus, .btn-outline-secondary:focus {
+  box-shadow: 0 0 0 .2rem #0cddac;
+}
+
+
+.btn-group-toggle .btn.active {
+  background-color: #0B2B64 !important;  
+  color: #f5f5f5 !important; 
+  border-color: #0B2B64 !important;
+}
+
+/* Se quiser diferenciar as categorias */
+.btn-group-toggle .btn-outline-secondary.active {
+  background-color: #00B38A !important;
+  color: #f5f5f5 !important;
+  border-color: #00B38A !important;
+}
+
+
+
+
+/* ===================================
+   BANNER
+=================================== */
+#banner-impermeabilizantes {
+  position: relative;
+  background: url('../img/impermeabilizando-banner.png') center/cover no-repeat;
+  height: 318px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F5F5F5;
+  text-align: center;
+}
+
+#banner-impermeabilizantes .overlay {
+  background-color: rgba(0, 47, 108, 0.75);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+#banner-impermeabilizantes h2 {
+  color: #F5F5F5;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+#banner-impermeabilizantes h3 {
+  color: #F5F5F5;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#banner-impermeabilizantes p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #F5F5F5;
+}
+
+/* ===================================
+   CARDS DE PRODUTO
+=================================== */
+#whatsModal .modal-content {
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+#whatsModal h5 {
+  font-weight: 600;
+  color: #333;
+}
+
+#whatsModal .btn-whats {
+  min-width: 150px;
+  font-weight: 500;
+}
+
+.product-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ===================================
+   BOTÕES
+=================================== */
+.btn-buy {
+  background-color: #198754;
+  color: #fff;
+}
+
+.btn-buy:hover {
+  background-color: #157347;
+  color: #fff;
+}
+
+.btn-details {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-details:hover {
+  background-color: #5a6268;
+  color: #fff;
+}
+
+/* ===================================
+   LINHAS COLORIDAS
+=================================== */
+.linha-azul {
+  width: 100%;
+  height: 4px;
+  margin-top: 30px;
+  background-color: #0B2B64;
+}
+
+.espaco-branco {
+  width: 100%;
+  height: 6px;
+  background-color: #fff;
+}
+
+.linha-verde {
+  width: 100%;
+  height: 4px;
+  background-color: #00B38A;
+}
+
+/* ===================================
+   RESPONSIVIDADE
+=================================== */
+
+/* LG */
+@media (max-width: 1199px) {
+  .page-title {
+    font-size: 2.2rem;
+  }
+
+  #banner-impermeabilizantes h2 {
+    font-size: 1.8rem;
+  }
+
+  #banner-impermeabilizantes h3 {
+    font-size: 1.6rem;
+  }
+
+  #banner-impermeabilizantes p {
+    font-size: 0.95rem;
+  }
+
+  .card .d-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .card .btn {
+    width: 100% !important;
+    max-width: 180px !important;
+  }
+}
+
+/* MD */
+@media (max-width: 992px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  #banner-impermeabilizantes h2 {
+    font-size: 1.6rem;
+  }
+
+  #banner-impermeabilizantes h3 {
+    font-size: 1.4rem;
+  }
+
+  #banner-impermeabilizantes p {
+    font-size: 0.9rem;
+  }
+
+  .sidebar {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* SM */
+@media (max-width: 767px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  #banner-impermeabilizantes {
+    height: 280px;
+    padding: 40px 0;
+  }
+
+  #banner-impermeabilizantes h2 {
+    font-size: 1.4rem;
+  }
+
+  #banner-impermeabilizantes h3 {
+    font-size: 1.2rem;
+  }
+
+  #banner-impermeabilizantes p {
+    font-size: 0.85rem;
+  }
+
+  .filters {
+    margin-bottom: 20px;
+    position: static;
+  }
+
+  .card .btn {
+    width: auto;
+    min-width: 110px !important;
+  }
+}
+
+/* XS */
+@media (max-width: 575px) {
+  .page-title {
+    font-size: 1.6rem;
+    margin-block: -20px;
+  }
+
+  #banner-impermeabilizantes h2 {
+    font-size: 1.2rem;
+  }
+
+  #banner-impermeabilizantes h3 {
+    font-size: 1rem;
+  }
+
+  #banner-impermeabilizantes p {
+    font-size: 0.8rem;
+  }
+
+  .card .d-flex {
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .card .btn {
+    width: auto !important;
+    min-width: 110px !important;
+  }
+
+  .produtos .card {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .produtos .card img {
+    height: 180px;
+    object-fit: contain;
+  }
+
+  .produtos .card .card-body {
+    padding: 1rem;
+  }
+}
+
+/* XXS */
+@media (max-width: 360px) {
+  .page-title {
+    font-size: 1.4rem;
+  }
+
+  #banner-impermeabilizantes h2 {
+    font-size: 1.1rem;
+  }
+
+  #banner-impermeabilizantes h3 {
+    font-size: 0.95rem;
+  }
+
+  #banner-impermeabilizantes p {
+    font-size: 0.75rem;
+  }
+
+  .produtos .card .d-flex {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .produtos .card .btn {
+    width: 100%;
+    max-width: 180px;
+  }
+}
+
+
+
